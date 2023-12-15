@@ -1,0 +1,30 @@
+h4 {
+  text-align: center;
+}
+
+/*Les 4 maisons*/
+.bloc {
+  padding: 30px;
+}
+
+.bloc:hover {
+  scale: 120%;
+  transition: 0.75s;
+  opacity: 50%;
+}
+
+.bloc .txt-sur-img {
+  margin: 0px;
+  position: absolute;
+}
+
+.test-txt {
+  position: absolute;
+}
+
+.triptique {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
