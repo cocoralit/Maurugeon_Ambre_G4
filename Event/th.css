@@ -1,0 +1,96 @@
+.premiere-page {
+  display: flex;
+  position: relative;
+}
+
+#titre-page {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  font-size: 100px;
+}
+
+#texte-chateau {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  margin: 10px 60px;
+}
+
+.post h3 {
+  text-align: left;
+  margin: 0px !important;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 1500px) {
+  #texte-display-none {
+    display: none;
+  }
+  #titre-page {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #chateau-gauche {
+    width: 400px;
+  }
+  #texte-chateau {
+    margin: 10px;
+    font-size: 85%;
+  }
+  #titre-page {
+    font-size: 55px;
+    margin-left: 40px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #chateau-gauche {
+    width: 200px;
+  }
+  #texte-chateau {
+    margin: 5px;
+    font-size: 55%;
+  }
+  #titre-page {
+    font-size: 30px;
+    margin-left: 20px;
+    padding: 5px;
+  }
+}
+
+/*Posts*/
+
+.post a {
+  color: aliceblue;
+}
+
+.container-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px;
+}
+
+.post {
+  background: linear-gradient(to left, #15364b, #000000);
+  width: 260px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  transition: 0.75s;
+}
+
+.post:hover {
+  transition: 0.75s;
+  background: linear-gradient(to bottom, #15364b, #000000);
+  scale: 110%;
+}
+
+#texte-post {
+  position: relative;
+}

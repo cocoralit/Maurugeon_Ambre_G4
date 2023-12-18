@@ -1,0 +1,372 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+nav {
+  margin-top: 12.5vh;
+  position: sticky;
+  z-index: 2;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  top: 0;
+  border-bottom: 1px solid;
+  border-color: rgb(36, 36, 47);
+}
+
+nav img {
+  padding: 10px;
+}
+
+nav a {
+  color: lightgray;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav ul {
+  gap: 50px;
+  margin-right: 50px;
+}
+
+nav li {
+  padding: 10px 0px;
+  transition: 0.75s;
+}
+
+nav li:hover {
+  border-bottom: 1.5px solid;
+  border-color: white;
+  transform: translate(-15%);
+  transition: 0.75s;
+}
+
+#mon-compte {
+  padding: 5px 0px;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    font-size: 8px;
+  }
+}
+
+/*Logos*/
+.logos {
+  text-align: center;
+}
+
+.header {
+  scale: 100%;
+}
+
+#logo-wizard {
+  margin: 50px;
+}
+
+/*Entête*/
+.entete {
+  margin: 50px 0px;
+}
+
+#titre-page {
+  font-weight: bold;
+}
+
+/*Animation Titre Main*/
+.animation-texte {
+  margin: 20px 0px;
+  height: 100px;
+}
+
+@keyframes texte-arrivant-gauche {
+  0% {
+    opacity: 0%;
+    transform: translateX(100%);
+  }
+}
+
+.animation-texte h2 {
+  animation: texte-arrivant-gauche 2s;
+}
+
+@keyframes texte-arrivant-droite {
+  0% {
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+}
+.animation-texte h1 {
+  animation: texte-arrivant-droite 2s;
+}
+
+/* A propos */
+/* Container 1 */
+
+.responsive-container {
+  position: relative;
+  max-height: 485px;
+  max-width: 862.4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.container-animation {
+  position: relative;
+  height: 485px;
+  width: 862.4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-animation img {
+  width: 100%;
+  position: absolute;
+  transition: 0.75s;
+}
+
+#deuxieme-img,
+#titre-gauche {
+  transition: 0.75s;
+}
+
+#deuxieme-img:hover,
+#deuxieme-img:hover + #titre-gauche {
+  opacity: 0;
+  transform: translate(250px);
+}
+
+#deuxieme-img:hover + #titre-gauche {
+  transform: translate(-250px);
+}
+
+.container-animation h1,
+.container-animation h2 {
+  text-align: left;
+  position: absolute;
+  margin: 0px;
+  left: 15px;
+  bottom: 65px;
+  z-index: 1;
+}
+
+#sous-titre-gauche {
+  bottom: 10px !important ;
+}
+
+/* Container 2 et 3*/
+.sous-container-animation {
+  position: relative;
+  margin: 40px 0px;
+  justify-content: center;
+  gap: 50px;
+  height: 217.5px;
+  width: 406.2px;
+}
+
+.sous-container-animation img {
+  width: 100%;
+}
+
+.sous-container-animation h3,
+.sous-container-animation h4 {
+  text-align: left;
+  position: absolute;
+  margin: 0px;
+  left: 15px;
+  bottom: 10px;
+}
+
+.sous-container-animation h4 {
+  bottom: -30px;
+}
+
+.deux-sous-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+/*Univers Saga*/
+.notre-univers {
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  margin: 100px auto;
+}
+
+.animation-texte h3 {
+  animation: texte-arrivant-droite 2s;
+  animation-delay: 5s;
+}
+
+.animation-texte p {
+  animation: texte-arrivant-gauche 2s;
+  animation-delay: 5s;
+}
+
+/*Tableau 4/2 */
+.tableau {
+  margin-top: 70px;
+  position: relative;
+  height: 600px;
+  display: flex;
+}
+
+.carre2 img,
+.carre3 img,
+.carre4 img {
+  width: 50%;
+}
+
+@keyframes secousse {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+.carre img:hover,
+.carre2 img:hover,
+.carre3 img:hover,
+.carre4 img:hover {
+  scale: 120%;
+  animation: secousse 3s infinite;
+}
+
+.carre img {
+  width: 57%;
+}
+
+.carre,
+.carre2,
+.carre3,
+.carre4 {
+  height: 50%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 70%;
+}
+
+.carre {
+  background: linear-gradient(to left bottom, #062427, #000000);
+}
+
+.carre2 {
+  background: linear-gradient(to left bottom, #081d31, #000000);
+}
+.carre3 {
+  background: linear-gradient(to left bottom, #4c091b, #000000);
+}
+
+.carre4 {
+  background: linear-gradient(to left bottom, #806306, #000000);
+}
+
+#banniere-tableau {
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  width: 100%;
+}
+
+/*Footer */
+footer {
+  background-image: url(https://wizardingworld.warnerbros.fr/static/version1701350453/frontend/Warner/wizardingworld/fr_FR/images/home/footer_background.webp);
+  padding: 20px;
+}
+
+.social-media {
+  justify-content: center;
+  gap: 50px;
+}
+
+.hover-social-media :hover {
+  scale: 140%;
+}
+
+/* Responsive */
+
+/* Responsive Container animation */
+
+@media screen and (max-width: 900px) {
+  .responsive-container {
+    scale: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .responsive-container h2 {
+    display: none;
+  }
+  .responsive-container h1 {
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container-animation {
+    height: 340px;
+  }
+}

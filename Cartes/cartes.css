@@ -1,0 +1,54 @@
+nav {
+  margin-top: 0 !important;
+}
+
+hr,
+h1,
+h2 {
+  margin: 0px 150px;
+}
+
+h1 {
+  text-align: left !important;
+  padding: 15px 0px;
+}
+
+#titre-right {
+  text-align: right !important;
+}
+
+h4 {
+  text-align: center;
+}
+
+/*Les Cartes*/
+.bloc {
+  padding: 30px;
+  transition: 0.75s;
+}
+
+.bloc:hover {
+  scale: 120%;
+  transition: 0.75s;
+  opacity: 50%;
+}
+
+.bloc .txt-sur-img {
+  margin: 0px;
+  position: absolute;
+}
+
+.test-txt {
+  position: absolute;
+}
+
+.triptique {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.triptique img {
+  border-radius: 10px;
+}
